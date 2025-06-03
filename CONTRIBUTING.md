@@ -66,7 +66,7 @@ that any documentation update is done in the same way was a code contribution.
 With a Dev Container setup, all necessary tools and dependencies are already installed. See the [Clone the repository](contribute/#clone-the-repository) section for instructions on how to get the repository, including the Dev Container setup.
 
    Note: It is also possible to work on the documentation locally on your windows machine, without using Dev Container.
-      See the [Documenation setup on local machines (windows only)](contribute/###Decumentation-setup-on-local-machines-(windows-only)) for further information.
+      See the [Documenation setup on local machines (windows only)](contribute/#documentation-setup-on-local-machines-windows-only) for further information.
 
 ## Code Contributions
 
@@ -78,9 +78,9 @@ This often provides additional considerations and avoids unnecessary work.
 
 ### Install the project (recommended way)
 
-#### Set up your Integrated Development Environment (IDE)
+#### Set up your IDE
 
-Before you can get started you have to install an IDE such as [VSCode](https://code.visualstudio.com/) or [PyCharm](https://www.jetbrains.com/de-de/pycharm/) on your device. Since most of the setup instructions are for VSCode, this IDE is recommended if you are new to programming.
+Before you can get started you have to install an Integrated Development Environment such as [VSCode](https://code.visualstudio.com/) or [PyCharm](https://www.jetbrains.com/de-de/pycharm/) on your device. Since most of the setup instructions are for VSCode, this IDE is recommended if you are new to programming.
 
 #### Install Git
 
@@ -96,59 +96,17 @@ $ git config --global user.name "Emma Paris"
 $ git config --global user.email "eparis@atlassian.com"
 ```
 
-After Git is installed and configured you have to add the GitLab Workflow extension to your IDE:
+#### Register on GitHub
 
-- Open up VSCode
-- Select "Extensions" on the left side
-- Search for the "GitLab Workflow" extension and install it
-
-#### Register on GitLab
-
-- Create a user account on [GitLab](https://gitlab.rrze.fau.de/users/sign_in) if you do not already have one.
-
-#### Authenticate your IDE with GitLab
-
-To authenticate your IDE to have permission to GitLab you have to create a personal access token:
-
-- Sign in on GitLab
-
-- On the left sidebar, select your avatar
-
-- Select **Edit profile**
-
-- On the left sidebar, select **Access tokens**
-
-- Select the **Add new token** button
-
-- Enter a name and expiry date for the token
-
-- Select the desired scopes (preferably all)
-
-- Select **Create personal access token**
-
-- Select **Copy personal access token**
-
-Now open VSCode:
-
-- Press Ctrl+Shift+P
-
-- Search for **GitLab: Authenticate**
-
-- Enter https://gitlab.rrze.fau.de
-
-- Select **Enter an existing token**
-
-- Enter the copied personal access token with Ctrl+V
+- Create a user account on [GitHub](https://github.com/login) if you do not already have one.
 
 #### Clone the repository
 
-- Go to the BSM2-Python repository on [GitLab](https://gitlab.rrze.fau.de/users/sign_in)
+- Go to the BSM2-Python repository on [GitHub](https://github.com/fau-evt/bsm2-python)
 
-- Continue into the **BSM2-Python**-Project and open the folder named **src/bsm2_python**
+- In the top right corner: Select the highlighted **Code** button and copy the URL from **Clone with HTTPS**
 
-- In the top right corner: Select the blue highlighted **Code** button and copy the URL from **Clone with HTTPS**
-
-- Optional: Cloning with SSH works as well if you prefer it. Though, it might me necessary to add an SSH key to your profile in order for your computer to establish a secure connection to GitLab
+- Optional: Cloning with SSH works as well if you prefer it. Though, it might me necessary to add an SSH key to your profile in order for your computer to establish a secure connection to GitHub
 
 Open VSCode:
 
@@ -156,9 +114,7 @@ Open VSCode:
 
 - Select **Git: Clone**
 
-- Select **Clone from GitLab**
-
-- Select as Repository name **evt/klaeffizient/bsm2_python**
+- Select **Clone from GitHub**
 
 - Enter the copied URL (from step "Clone with HTTPS/SSH") with Ctrl+V
 
@@ -166,7 +122,7 @@ Open VSCode:
 
 
 #### Installation via Dev Container (remote)
-(Tested in VS Code)
+<!-- (Tested in VS Code) -->
 1. In order to install the project via Dev Container, you need to have [Docker] installed on your machine.
    - To install Docker Desktop download and run the installer from the [Docker] website.
    - Important note: For this to work you actually do not need to sign in to Docker Desktop.
@@ -187,7 +143,7 @@ Open VSCode:
 The following section focus on installing the project as well as contributing to our documentation
 without using Dev Container and Docker Desktop.
 These approaches do not represent the recommended way, but are possible if preferred.
-   
+
 
 ##### Installation via hatch (local)
 1. Make sure [pipx] is installed using [pip] and install [hatch]:
